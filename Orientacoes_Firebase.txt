@@ -1,0 +1,56 @@
+O Firebase serve como um servidor externo para que sua aplicação funcione em outros celulares 
+sem contar que podemos colocar uma função em nossa aplicação salva no Firebase sendo assim não precisará atualizar sua aplicação
+toda vez que tiver algo diferente.
+
+Criando projeto no Firebase e linkando com Projeto no Android Studio:
+Primeiro faça login no site da Firebase pondendo usar sua conta do Google
+
+Depois Click em adicionar projeto
+escolha se o projeto vai ser android ou IOS dentre outros
+Siga os passos no firebase
+
+Click em continuar configuração do SDK
+e siga os quatro passos descrito no Firebase
+
+para colocar o SHA1 você pode seguir o código para o windos descrito no link 
+https://developers.google.com/android/guides/client-auth
+
+siga o código de acordo com o seu Sistema Operacional
+
+siga os seguintes passo no cmd 
+
+cd C:\Program Files\java
+depois dê um dir para saber a versão do JDk
+depois inseira a versão do JDk usando cd e (versão do JDk)
+depois cd bin
+depois keytool.exe
+depois nesse momento coloque o código lque pegou no link 
+https://developers.google.com/android/guides/client-auth
+coloque a senha para a área de armazenamento de chaves:
+copie o SHA1 que aparecer e cole na parte pedida no Firebase
+e clique pra salvar o SHA1
+depois vá na parte de Desenvolver
+Authentication
+Configurar método de Login
+Email/senha e ative a primeira opção
+
+depois abra um projeto no Android Studio
+vá em configurações do projeto e faça download
+do arquivo Json
+salve ele na pasta App do projeto no Android Studio
+defina o ID do aplicativo usando com o nome do pacote criado no Firebase
+na pasta app do android Studio
+em AplicationId 
+
+nessa mesma tela em dependencies coloque o codigo
+implementation 'com.google.firebase:firebase-core:16.0.8'
+no build.gradle (Project: AulasdeandroidFirebase) nessa tela colque em dependencies 
+classpath 'com.google.gms:google-services:4.2.0'
+e faça a sincronização do seu app
+
+
+
+
+
+
+
